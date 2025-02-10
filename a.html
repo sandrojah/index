@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head></head>
+<body>
+<div id="konzola"></div>
+<script>
+    var prvibroj = parseInt(prompt('unesite prvi broj: '));
+    var operator = prompt('unesite racunsku operaciju: ');
+    var drugibroj = parseInt(prompt('unesite drugi broj: '));
+
+    if (isNaN(prvibroj) ||  isNaN (drugibroj)){
+        alert("unesite ispravne brojeve! ");
+    }
+
+    var rez;
+
+    switch(operator){
+        case '+':
+            rez = prvibroj + drugibroj;
+            break;
+        case '-':
+            rez = prvibroj - drugibroj;
+            break;
+        case '*':
+            rez = prvibroj * drugibroj;
+            break;
+        case '/':
+            rez = prvibroj / drugibroj;
+            break;
+        default:
+            rez = 'netacna operacija! ';
+            break;
+    }
+
+    alert(rez);
+
+    
+</script>
+
+</body>
+</html>
